@@ -33,6 +33,12 @@ lora_training/
 
 # Workflow
 
+The complete training pipeline includes:
+1. Image preprocessing
+2. Metadata generation
+3. LoRA fine-tuning
+4. Inference testing
+
 ## 1. Prepare Images
 
 ```bash

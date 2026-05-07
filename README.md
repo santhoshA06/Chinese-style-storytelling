@@ -1,4 +1,5 @@
-# AI Storybook Generation using Diffusion Models
+# AI Driven Storytelling with Art 
+## Storybook Generation using Diffusion Models
 ### Traditional Chinese Ink Painting Style
 
 This capstone project builds an end-to-end AI storybook generation system. A user enters a short story idea, the system generates a structured storyline with multiple scenes, and each scene is converted into an image in a traditional Chinese ink-wash / shan shui inspired style.
@@ -149,10 +150,13 @@ Capstone_project/
 ├── .gitignore
 └── README.md
 ---
-
+```
 # Important Note
 
 The dataset and LoRA weights are **NOT included** in this repository because of file size limitations.
+
+Dataset Link:
+https://www.kaggle.com/datasets/santhosh62030/traditional-chinese-ink-painting-images
 
 Expected local structure:
 
@@ -342,7 +346,7 @@ Save metadata back to Drive:
 
 # LoRA Training
 
-This project uses the Hugging Face Diffusers LoRA training script.
+This project uses the official Hugging Face Diffusers LoRA training script.
 
 Download if missing:
 
