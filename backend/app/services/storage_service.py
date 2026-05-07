@@ -18,3 +18,4 @@ class StorageService:
     def save_json(self, path: Path, data: Any) -> None:
         with path.open("w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+            

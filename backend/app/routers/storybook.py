@@ -1,7 +1,5 @@
 from __future__ import annotations
-
 from fastapi import APIRouter
-
 from app.config import settings
 from app.schemas import ScenePlan, StoryGenerateRequest, StorybookResponse
 from app.services.image_service import ImageService
@@ -15,13 +13,11 @@ _story_service: StoryService | None = None
 _image_service: ImageService | None = None
 _storage_service = StorageService()
 
-
 def get_story_service() -> StoryService:
     global _story_service
     if _story_service is None:
         _story_service = StoryService(settings.model_story_llm)
     return _story_service
-
 
 def get_image_service() -> ImageService:
     global _image_service
@@ -31,7 +27,6 @@ def get_image_service() -> ImageService:
             use_lora_default=settings.use_lora,
         )
     return _image_service
-
 
 @router.post("/generate", response_model=StorybookResponse)
 def generate_storybook(payload: StoryGenerateRequest) -> StorybookResponse:

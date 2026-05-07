@@ -42,7 +42,7 @@ STORY_TEXT RULES:
 - Child-friendly language
 - Describes what happens in this specific scene
 
-IMAGE_PROMPT RULES (CRITICAL — these must be visually concrete):
+IMAGE_PROMPT RULES (CRITICAL - these must be visually concrete):
 - 25 to 45 words
 - Must include in this order:
   (a) THE SUBJECT (e.g. "a small girl in red robes", "a young scholar")

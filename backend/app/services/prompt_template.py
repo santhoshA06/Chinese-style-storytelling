@@ -27,7 +27,7 @@ STYLE = (
     "elegant brush strokes"
 )
 
-# Quality tokens (kept short, placed at the END (not the beginning))
+# Quality tokens (kept short, placed at the END to avoid overshadowing the scene description)
 QUALITY_TAIL = "highly detailed, masterpiece"
 
 # Negative prompt (comprehensive coverage of all failure modes seen so far)
@@ -49,9 +49,9 @@ NEGATIVE = (
     "low quality, blurry, pixelated, jpeg artifacts"
 )
 
-# Subject keyword → emphasised replacement
+# Subject keyword -> emphasised replacement
 # When these terms appear in the scene description, we boost them with
-# compel emphasis syntax (term:1.3) so SD really pays attention to them.
+# compel emphasis syntax so SD really pays attention to them.
 EMPHASIS_TERMS = [
     "girl", "boy", "child", "woman", "man", "scholar", "monk", "fisherman",
     "bridge", "wooden bridge", "stone bridge", "pavilion",
@@ -62,9 +62,8 @@ EMPHASIS_TERMS = [
     "moon", "sun", "lantern",
 ]
 
-# Scene type → atmospheric extras
+# Scene type -> atmospheric extras
 # These add Chinese-painting-appropriate atmosphere keywords.
-# Limited to TWO max so we don't overflow CLIP's context.
 SCENE_ATMOSPHERE = {
     "morning":  "soft golden morning light, dawn mist",
     "evening":  "warm amber evening light, dusk haze",
@@ -79,7 +78,7 @@ SCENE_ATMOSPHERE = {
 }
 
 def _strip_cjk(text: str) -> str:
-    """Remove CJK characters and CJK punctuation."""
+    """Remove CJK (Chinese, Japanese, Korean) characters and CJK punctuation."""
     cleaned = re.sub(r"[\u4e00-\u9fff\u3400-\u4dbf\uf900-\ufaff]", " ", text)
     cleaned = re.sub(r"[\u3000-\u303f\uff00-\uffef]", " ", cleaned)
     return re.sub(r"\s{2,}", " ", cleaned).strip()
@@ -120,11 +119,11 @@ def scene_to_image_prompt(scene_description: str, for_sdxl: bool = False) -> str
     """
     Build the final SD prompt.
     Order:
-      1. Scene description (with subject emphasis) — gets highest CLIP weight
+      1. Scene description (with subject emphasis) gets highest CLIP weight
       2. Atmosphere extras (if detected)
       3. Composition hint
-      4. Style tail
-      5. Quality tail
+      4. Style
+      5. Quality
     """
     desc = _strip_cjk(scene_description).strip().rstrip(".,;:")
 

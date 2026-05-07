@@ -2,10 +2,8 @@
 Pydantic schemas for all API request and response models.
 Updated to match new config defaults and add lora_scale control.
 """
-
 from typing import List, Optional
 from pydantic import BaseModel, Field
-
 
 class StoryGenerateRequest(BaseModel):
     idea: str = Field(
@@ -22,13 +20,13 @@ class StoryGenerateRequest(BaseModel):
         description="Number of illustrated scenes (3-5).",
     )
     num_inference_steps: int = Field(
-        default=35,          # Increased from 28 — better quality
+        default=35,          # Increased from 28 - better quality
         ge=20,
         le=50,
         description="Diffusion inference steps. More = better quality, slower.",
     )
     guidance_scale: float = Field(
-        default=7.5,         # Lowered from 8.5 — 8.5 causes artifacts on SD 1.5
+        default=7.5,
         ge=5.0,
         le=12.0,
         description=(
@@ -51,13 +49,11 @@ class StoryGenerateRequest(BaseModel):
         ),
     )
 
-
 class ScenePlan(BaseModel):
     scene_id: int
     story_text: str
     image_prompt: str
     image_url: Optional[str] = None
-
 
 class StorybookResponse(BaseModel):
     storybook_id: str
@@ -65,14 +61,11 @@ class StorybookResponse(BaseModel):
     summary: str
     scenes: List[ScenePlan]
 
-
 class ImageQuestionRequest(BaseModel):
     question: str = Field(min_length=2)
 
-
 class ImageQuestionResponse(BaseModel):
     answer: str
-
 
 class HealthResponse(BaseModel):
     status: str

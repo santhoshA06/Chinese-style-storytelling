@@ -4,7 +4,6 @@ __pycache__/
 .venv/
 venv/
 venv311/
-backend/venv/
 backend/venv311/
 
 # Node
@@ -39,3 +38,8 @@ lora_training/output/
 # OS
 .DS_Store
 Thumbs.db
+
+# logs
+*.log
+frontend/vite.err.log
+frontend/vite.out.log

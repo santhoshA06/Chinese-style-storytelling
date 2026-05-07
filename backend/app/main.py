@@ -2,7 +2,6 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-
 from app.config import settings
 from app.routers.health import router as health_router
 from app.routers.storybook import router as story_router

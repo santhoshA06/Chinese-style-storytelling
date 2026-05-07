@@ -84,3 +84,4 @@ Be descriptive but do not invent very specific details that are not supported.
         caption = self._caption_image(image)
         short_answer = self._short_answer(image, question)
         return self._expand_answer(question, caption, short_answer)
+    

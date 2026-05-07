@@ -1,13 +1,3 @@
-"""
-Image Generation Service
-
-Fix applied: SD 1.5 CLIP encoder silently truncates at 77 tokens.
-Solution: use `compel` library which encodes long prompts by chunking into
-77-token windows, encoding each separately, then interpolating embeddings.
-This means the full Chinese painting style prompt is actually seen by the model.
-
-Install: pip install compel
-"""
 from __future__ import annotations
 import os
 from pathlib import Path
@@ -246,7 +236,7 @@ class ImageService:
         # Encode with compel (handles >77 tokens correctly)
         cond, uncond = self._encode_prompt(prompt, neg)
 
-        # Build kwargs — compel returns tensors, raw fallback returns strings
+        # Compel returns tensors, raw fallback returns strings
         using_compel = not isinstance(cond, str)
 
         if self._is_sdxl and self._refiner:

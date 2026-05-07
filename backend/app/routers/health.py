@@ -13,3 +13,4 @@ def health_check():
         story_model=settings.model_story_llm,
         image_model=settings.model_sd,
     )
+    

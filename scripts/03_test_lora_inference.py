@@ -17,20 +17,20 @@ NEGATIVE = (
 
 def main():
     try:
-        print("Step 1: Checking CUDA...", flush=True)
+        print("Checking CUDA...", flush=True)
         print("CUDA available:", torch.cuda.is_available(), flush=True)
         if torch.cuda.is_available():
             print("GPU:", torch.cuda.get_device_name(0), flush=True)
 
         lora_file = Path(LORA_DIR) / "pytorch_lora_weights.safetensors"
-        print("Step 2: Checking LoRA weights...", flush=True)
+        print("Checking LoRA weights...", flush=True)
         print("LoRA path:", lora_file.resolve(), flush=True)
         print("Exists:", lora_file.exists(), flush=True)
 
         if not lora_file.exists():
             raise FileNotFoundError(f"LoRA weights not found: {lora_file}")
 
-        print("Step 3: Loading pipeline...", flush=True)
+        print("Loading pipeline...", flush=True)
         pipe = StableDiffusionPipeline.from_pretrained(
             BASE_MODEL,
             torch_dtype=torch.float16,
@@ -45,11 +45,11 @@ def main():
         pipe.enable_vae_tiling()
 
         # Do NOT enable xformers here for now
-        print("Step 4: Loading LoRA weights...", flush=True)
+        print("Loading LoRA weights...", flush=True)
         pipe.load_lora_weights(LORA_DIR)
         pipe.fuse_lora()
 
-        print("Step 5: Generating image...", flush=True)
+        print("Generating image...", flush=True)
         image = pipe(
             prompt=PROMPT,
             negative_prompt=NEGATIVE,
