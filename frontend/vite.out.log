@@ -1,0 +1,40 @@
+
+> ai-storytelling-frontend@1.0.0 dev
+> vite --host 127.0.0.1
+
+Port 5173 is in use, trying another one...
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m411[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5174[22m/[39m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StoryForm.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ModelSelector.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StorySceneCard.tsx, /src/index.css[22m
+[2m11:15:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoadingOverlay.tsx, /src/index.css[22m
+[2m11:15:06 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m11:20:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m11:20:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m11:20:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/index.css[22m
+[2m11:20:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StoryForm.tsx, /src/index.css[22m
+[2m11:20:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m11:20:30 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/StorySceneCard.tsx, /src/index.css[22m
+[2m11:20:30 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m2:27:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:31 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m2:27:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/UploadQuestionCard.tsx, /src/index.css[22m
+[2m10:43:14 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m10:43:14 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m10:43:21 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m10:43:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m
+[2m10:43:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Header.tsx, /src/index.css[22m

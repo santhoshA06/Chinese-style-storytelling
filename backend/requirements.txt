@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-multipart
+torch
+torchvision
+transformers==4.47.0
+diffusers==0.30.3
+accelerate==0.33.0
+safetensors
+pillow
+sentencepiece
+aiofiles
+compel

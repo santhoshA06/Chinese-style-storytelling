@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+venv311/
+backend/venv/
+backend/venv311/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# Generated files
+generated/
+backend/generated/
+outputs/
+
+# Dataset / model weights
+lora_training/dataset/
+lora_training/output/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.zip
+
+# Cache
+.cache/
+.huggingface/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
