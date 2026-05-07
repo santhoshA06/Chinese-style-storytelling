@@ -1,0 +1,25 @@
+{
+  "storybook_id": "storybook_1777663444",
+  "title": "A Brave Child Finds Hidden Moonlit Village",
+  "summary": "In a mystical bamboo mountain, a brave child stumbles upon a secret village illuminated by the full moon.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "story_text": "The child wanders through dense bamboo forests under the silvery glow of the full moon.",
+      "image_prompt": "a small (girl:1.3) in simple clothes walking through tall (bamboo:1.3) stalks casting long shadows, surrounded by glowing full moonlight, her headlamp illuminating the path ahead, wide composition, clear depth, balanced foreground and background, traditional Chinese ink wash painting, shan shui art, rice paper texture, soft mist, sepia tones, elegant brush strokes, highly detailed, masterpiece",
+      "image_url": "/storybooks/files/storybook_1777663444/scene_1.png"
+    },
+    {
+      "scene_id": 2,
+      "story_text": "She hears faint sounds of villagers singing and laughing from within the bamboo groves.",
+      "image_prompt": "the (girl:1.3) peeking around a bend in the path, revealing a cluster of thatched-roof houses nestled among the (bamboo:1.3), villagers gathered outside enjoying a festival, lanterns hanging from branches above, gentle breeze carrying the sound of music, wide composition, clear depth, balanced foreground and background, traditional Chinese ink wash painting, shan shui art, rice paper texture, soft mist, sepia tones, elegant brush strokes, highly detailed, masterpiece",
+      "image_url": "/storybooks/files/storybook_1777663444/scene_2.png"
+    },
+    {
+      "scene_id": 3,
+      "story_text": "Excitedly, she enters the village and finds a magical world filled with friendly creatures and wonders.",
+      "image_prompt": "the (girl:1.3) entering the (village:1.3), stepping into a cozy courtyard lit by lanterns, children playing games, adults sharing stories, exotic animals like fireflies and tiny dragons flying overhead, serene night sky visible through windows, moonlit, soft moonlight, deep shadows, wide composition, clear depth, balanced foreground and background, traditional Chinese ink wash painting, shan shui art, rice paper texture, soft mist, sepia tones, elegant brush strokes, highly detailed, masterpiece",
+      "image_url": "/storybooks/files/storybook_1777663444/scene_3.png"
+    }
+  ]
+}
